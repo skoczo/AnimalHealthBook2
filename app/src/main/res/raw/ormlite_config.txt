@@ -1,0 +1,109 @@
+#
+# generated on 2017/07/13 09:32:48
+#
+# --table-start--
+dataClass=com.skoczo.animalheathbook.db.entieties.Animal
+tableName=animals
+# --table-fields-start--
+# --field-start--
+fieldName=entityId
+columnName=ID
+canBeNull=false
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=breed
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=picture
+dataPersister=BYTE_ARRAY
+# --field-end--
+# --field-start--
+fieldName=weigthList
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.skoczo.animalheathbook.db.entieties.Breed
+tableName=breeds
+# --table-fields-start--
+# --field-start--
+fieldName=name
+columnName=name
+canBeNull=false
+id=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.skoczo.animalheathbook.db.entieties.Event
+tableName=events
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=ID
+canBeNull=false
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=price
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.skoczo.animalheathbook.db.entieties.EventName
+tableName=event_names
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+canBeNull=false
+unique=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.skoczo.animalheathbook.db.entieties.Weigth
+tableName=weigth
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=weigth
+# --field-end--
+# --field-start--
+fieldName=date
+# --field-end--
+# --field-start--
+fieldName=animal
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
